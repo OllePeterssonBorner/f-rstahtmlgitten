@@ -1,0 +1,122 @@
+
+
+
+div{
+
+   width: 80%;
+    margin: 10%
+
+    
+
+}
+/*
+body {
+    
+    background-image: url("Allmän_Sportbild.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+*/
+
+
+    
+    
+
+ 
+
+
+
+
+  img {
+
+    image-resolution: 50, 50;
+    width: 100%;
+    border-radius:2%;
+  
+}
+  
+text{
+
+    font-size: 400%;
+    margin-left: 35%;
+    font-family: Comic sans-serif, 'Times New Roman', Georgia, Times, serif;
+   color: black;
+    
+}
+#extraspecial{
+    font-size: 1100%;
+    color: white;
+
+}
+
+
+#box2 {
+    background-color: #65a5c2;
+   
+    grid-area: box2;
+    
+    padding: 1.5%;
+    border-radius:4%;
+    
+}
+
+#box3 {
+    background-color: #dcca48;
+    
+    grid-area: box3;
+    padding: 1.5%;
+    border-radius:4%;
+}
+
+#box4 {
+    background-color: #741313;
+    
+    grid-area: box4;
+    padding: 1.5%;
+    border-radius:4%;
+}
+#bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+      
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 700px){
+
+    #bg {
+        background-image:url("../diagnos 1\img\Allmän_Sportbild.jpg");
+        background-repeat:repeat-y;
+        top: 0; 
+        left: 0; 
+      
+          
+       
+        min-width: 100%;
+        min-height: 100px;
+        z-index: -1;
+    }
+    text{
+
+        font-size: 220%;
+        margin-left: 20%;
+        font-family: Comic sans-serif, 'Times New Roman', Georgia, Times, serif;
+       color: black;
+        
+    }
+    #extraspecial{
+        font-size: 650%;
+        margin-left: 15%;
+        color: white;
+    
+    }
+}
+
+
+
