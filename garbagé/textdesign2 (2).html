@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+#ram {
+width:60%;
+margin:auto;
+display:flex;
+border:solid black 1px;
+margin-top:20px;
+}
+
+#meny {
+width:25%;
+min-height:400px;
+border-right:solid black 1px;
+}
+
+#innehall {
+width:75%;
+min-height:400px;
+padding:10px;
+}
+pre {
+font-size:1.5em;
+}
+button {
+width:150px;
+min-height:50px;
+border:solid black 1px;
+border-radius:80%;
+padding:15px;
+margin-left:20px;
+margin-bottom:10px;
+
+}
+
+h3 {
+margin-left:20px;
+color:blue;
+}
+</style>
+
+<body>
+<div id="ram">
+
+<div id="meny">
+<h3>Klicka på en button för att ändra texten till höger</h3>
+
+<button onclick="myFunction1()">Gör texten större med 120%</button>
+
+<script>
+  function myFunction1() {
+    document.getElementById("text").style.fontSize = "120%";
+  }
+  </script>
+
+<button onclick="myFunction2()">Ändra textfärgen till blå</button>
+
+<script>
+  function myFunction2() {
+    document.getElementById("text").style.color = "blue";
+  }
+  </script>
+
+<button onclick="myFunction3()">Öka radhöjden till 150%</button>
+
+<script>
+  function myFunction3() {
+    document.getElementById("text").style.lineHeight = '150%';
+  }
+  </script>
+
+<button onclick="myFunction4()">Ändra teckensnittet till Verdana</button>
+<script>
+  function myFunction4() {
+    document.getElementById("text").style.fontFamily = 'Verdana';
+  }
+  </script>
+
+<button onclick="myFunction5()">Justify - Rak vänster och högerkant</button>
+<script>
+  function myFunction5() {
+    document.getElementById("text").style.justifyContent;
+  }
+  </script>
+<button onclick="myFunction6()">Ändra textens bakgrundsfärg</button>
+<script>
+  function myFunction6() {
+    document.getElementById("text").style.backgroundColor = "blue";
+  }
+  </script>
+<button onclick="myFunction7()">Klicka här för att dölja texten</button>
+<script>
+  function myFunction7() {
+    document.getElementById("text").style.visibility = "hidden";
+  }
+  </script>
+<button onclick="myFunction8()">Klicka här för att visa texten</button>
+<script>
+  function myFunction8() {
+    document.getElementById("text").style.visibility = "visible";
+  }
+  </script>
+</div>
+
+<div id="innehall">
+<h1>Vad är Textdesign?</h1>
+<p id="text">
+Textdesign är en utbildning för dig som vill designa text. Alltid med etisk, hållbar och inkluderande design med användaren i fokus. 
+Ofta med koppling till branschen. Du får unik teoretisk och praktisk kunskap. Efter utbildningen är du redo för yrkeslivet som designer. 
+Teori, metod och praktik kombineras för att få förståelse för hur människor upplever, förstår och interagerar med text och för att designa 
+utifrån människors behov och förutsättningar. Kallas även Informationsdesign som är ett relativt nytt akademiskt ämne som fokuserar på 
+att göra information så begriplig och lättillgänglig som möjligt. 
+<br><br>
+Kunskapsområdet är dock inte nytt och har länge nyttjats vid utformningen av skyltar, informationstavlor, kartor, symboler och användarmanualer. 
+Efterfrågan på denna kunskap har de senaste årtiondena ökat exponentiellt, inte minst på grund av utvecklingen av digitala medier som exempelvis 
+webbsidor där god informationsdesign är central för att uppnå en god användbarhet.
+</p>
+
+<h3 style="margin-top:100px;margin-left:0px;">Den första button i menyn har detta script.</h3>
+
+<pre>
+&lt;button onclick="myFunction()">Gör texten större med 120%&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("text").style.fontSize = "120%";
+}
+&lt;/script&gt;
+</pre>
+<p>Vilket script har de övriga buttons för att de ska fungera som det är tänkt?</p>
+</div>
+
+
+
+</div>
+</body>
+</html>

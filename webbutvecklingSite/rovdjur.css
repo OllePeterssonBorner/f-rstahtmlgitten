@@ -1,0 +1,222 @@
+h1{
+    margin-left: 4%;
+    font-family: 'Comic sans';
+    font-size: 20px;
+    
+}
+
+
+div, figure{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    
+}
+nav{
+    color: rgb(255, 0, 0);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+   
+    
+    background-color: black;
+    border-radius: 10px;
+    
+    
+}
+
+
+body {
+    background-color: #aa9a9a;
+
+   
+}
+
+.wrapper {
+    background-color: #FFFFFF;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+
+    
+   grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box5"
+    "box6 box7"
+    
+    
+  
+}
+
+
+
+
+figure{
+    border: 5px solid #000000;
+    /*
+    padding: 15px;
+    */
+    max-height: 10%;
+    flex-basis: 120px;
+    /*
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-self: flex-end;
+    */
+
+   
+
+  
+    
+  }
+  a{
+      text-decoration: none;
+      color:blanchedalmond;
+     
+  }
+  b{
+      color: hotpink;
+  }
+
+img {
+
+    image-resolution: 50, 50;
+    width: 40%;
+    margin-left: 6%;
+    margin-top:3%;
+    
+    border:grey;
+    border-width: 10px;
+    border-radius: 5px;
+    /*
+    max-width: 100%;
+    max-height: 100%;
+    */
+}
+p {
+
+    margin-left: 15%;
+    margin-right: 15%;
+   
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    font-size: 60px
+    
+    
+}
+#Hoho{
+    font-size: 40px;
+    
+}
+#Geting {
+    background-color: #ffd4a0;
+   
+    grid-area: box1;
+  
+    
+    
+}
+#Varg {
+    background-color: #ffd4a0;
+   
+    grid-area: box1;
+  
+    
+    
+}
+
+#Björn {
+    background-color: #ffd4a0;
+   
+    grid-area: box2;
+   
+}
+
+#Huskatt {
+    background-color: #ffd4a0;
+    
+    grid-area: box3;
+    
+}
+
+#SteveJobs {
+    background-color: #ffd4a0;
+    
+    grid-area: box4;
+   
+}
+
+#Lodjur {
+    background-color: #ffd4a0;
+    
+    grid-area: box5;
+    
+}
+#Isbjörn {
+    background-color: #ffd4a0;
+   
+    grid-area: box6;
+    
+}
+@media screen and (max-width: 700px){
+
+    
+    h1{
+        margin-left: 4%;
+        font-family: 'Comic sans';
+        font-size: 20px;
+        
+    }
+  
+    img {
+
+        width: 80%;
+        margin-left: 10%;
+       
+        border: grey ;
+        border-width: 10px;
+        border-radius: 5px;
+        /*
+        max-width: 100%;
+        max-height: 100%;
+        */
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin-right: 55%;
+    
+        
+        background-color: black;
+        border-radius: 10px;
+        
+     
+   
+       
+      
+    
+      
+        
+      }
+      p {
+
+       
+       
+        border-radius: 7px;
+        background-color: blanchedalmond;
+        font-size: 50px
+        
+        
+    }
+    
+}

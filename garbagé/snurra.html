@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        margin: 100px;
+        width: 500px;
+        height: 500px;
+        animation: rotation 2s linear infinite;
+    }
+    .circle {
+        border: 1px solid black;
+        border-radius: 50%;
+        background-image: linear-gradient(to right, yellow, red, yellow);
+    }
+    @keyframes rotation {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+    @keyframes pulse {
+        0% { width: 400px; height: 400px; }
+        50% { width: 500px; height: 500px; }
+        100% { width: 400px; height: 400px; }
+    }
+    @keyframes move {
+        0% { margin-left: 100px; }
+        50% { margin-left: 960px; }
+        100% { margin-left: 100px; }
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td class="circle"></td>
+            <td></td>
+            <td class="circle"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="circle"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="circle"></td>
+            <td></td>
+            <td class="circle"></td>
+        </tr>
+    </table>
+</body>
+</html>

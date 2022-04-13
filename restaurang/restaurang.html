@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="huttidutt.jpg" type="image/x-icon" />
+
+    <script src="restaurang.js"></script>
+  </head>
+
+  <body>
+    <h2>Restaurang Rå Bäver</h2>
+
+    <form>
+      <!-- <iframe
+        width="790"
+        height="444"
+        src="https://www.youtube.com/embed/Dg-SG_u-Kk8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+
+      <fieldset>
+        <label>
+          Bäver
+          <h1>
+            <input type="checkbox" name="bäver" id="bäver" /> Benbrotts-bäver
+          </h1>
+
+          <label><input type="checkbox" id="bäverportion" /> Barnportion</label>
+          <br />
+          <br />
+          Mängd <input type="number" id="bävermängd" />
+          <label>
+            Otillagad
+            <input type="range" min="0" max="100" id="bäverlagning" />
+          </label>
+          Vidbränd
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Rådjur
+
+          <h1>
+            <input type="checkbox" name="rådjur" id="rådjur" /> Roadkill-Rådjur
+          </h1>
+
+          Mängd <input type="number" id="rådjursmängd" />
+          <label
+            ><input type="checkbox" id="rådjursportion" /> Barnportion</label
+          >
+          <br />
+          <br />
+
+          <label>
+            Otillagad
+            <input type="range" min="0" max="100" id="rådjurslagning" />
+          </label>
+          Vidbränd
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Älg
+
+          <h1><input type="checkbox" name="älg" id="älg" /> Golvad Älg</h1>
+
+          Mängd <input type="number" id="älgmängd" />
+          <label><input type="checkbox" id="älgportion" /> Barnportion</label>
+          <br />
+          <br />
+
+          <label>
+            Otillagad
+            <input type="range" min="0" max="100" id="älglagning" />
+          </label>
+          Vidbränd
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Mink
+
+          <h1><input type="checkbox" name="mink" id="mink" /> Mosad Mink</h1>
+
+          Mängd <input type="number" id="minkmängd" />
+          <label><input type="checkbox" id="minkportion" /> Barnportion</label>
+          <br />
+          <br />
+
+          <label>
+            Otillagad
+            <input type="range" min="0" max="100" id="minklagning" />
+          </label>
+          Vidbränd
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Sill
+
+          <h1>
+            <input type="checkbox" name="sill" id="sill" /> Skadeskjuten Sill
+          </h1>
+
+          Mängd <input type="number" id="sillmängd" />
+          <label><input type="checkbox" id="sillportion" /> Barnportion</label>
+          <br />
+          <br />
+
+          <label>
+            Otillagad
+            <input type="range" min="0" max="100" id="silllagning" />
+          </label>
+          Vidbränd
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Duva
+
+          <h1><input type="checkbox" name="duva" id="duva" /> Drunknad Duva</h1>
+
+          Mängd <input type="number" id="duvmängd" />
+          <label><input type="checkbox" id="duvportion" /> Barnportion</label>
+          <br />
+          <br />
+
+          <label>
+            Otillagad
+            <input type="range" min="0" max="100" id="duvlagning" />
+          </label>
+          Vidbränd
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Funktioner</legend>
+
+        <input type="reset" value="Återställ beställning" />
+        <input
+          type="button"
+          value="Skicka in beställning"
+          onclick="addDataToTable()"
+        />
+        <hr />
+
+        <label>
+          ETA
+          <input
+            type="date"
+            min="2022-01-21"
+            max="2025-01-01"
+            name="datum"
+            id="datum"
+            required
+          />
+        </label>
+        Meddelande till kocken<label
+          ><input type="text" name="kockmeddelande" id="kockmeddelande" />
+        </label>
+      </fieldset>
+    </form>
+
+    <style>
+      h3 {
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+        font-family: Impact, "Arial Narrow Bold", sans-serif;
+      }
+      h2 {
+        font-family: "Comic Sans MS", sans-serif;
+      }
+
+      table {
+        width: 80%;
+        margin-left: 10%;
+      }
+      td {
+        border: solid black 1px;
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      fieldset {
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        margin-left: 0%;
+        border-collapse:collapse;
+      }
+
+      body {
+        background-image: url("skolan.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        h1 {
+          width: 100%;
+          margin-left: 0%;
+        }
+
+        body {
+          background-image: none;
+          background-color: LightSkyBlue;
+        }
+      }
+    </style>
+
+    <h3>Beställningshistorik</h3>
+
+    <table id="testform">
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </table>
+  </body>
+</html>
