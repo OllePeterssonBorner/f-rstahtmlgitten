@@ -8,7 +8,6 @@ h1{
 div, p, figure{
     margin: 10px;
     padding: 2;
-    
 }
 
 body {
@@ -28,9 +27,6 @@ body {
     "box2 box3"
     "box4 box5"
     "box6 box7";
-    
-    
-  
 }
 
 figure{
@@ -48,7 +44,6 @@ figure{
 }
 
   img {
-
     image-resolution: 50, 50;
     width: 100%;
     /*

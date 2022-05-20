@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pu3.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box1 bordertype">
+        <h1>Kortfabriken</h1>
+      </div>
+      <div class="box2 bordertype">
+        <div class="tarea" id="tarea">
+          <h2>Text</h2>
+          <label><textarea></textarea></label>
+        </div>
+
+        <div class="dropdownmenu bordertype">
+          <select
+            id="dropdownmenu"
+            style="
+              height: 36px;
+              border-right: 4px solid;
+              width: 55px;
+              background: transparent;
+            "
+          >
+            <option value="bebis">Bebis</option>
+            <option value="gris">Gris</option>
+            <option value="hjärta">Hjärta</option>
+            <option value="myra">Myra</option>
+            <option value="sol">Sol</option>
+            <option value="träd">Träd</option>
+            <option value="äpple">Äpple</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="box3 bordertype"></div>
+      <div class="box4 bordertype">
+        <table id="testform">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+      <div class="box5">
+        <h3>Bakgrundsfärg</h3>
+        <label><input type="color" id="thecolor" /></label>
+      </div>
+
+      <div class="box6 bordertype">
+        <input
+          type="button"
+          value="Generera kort"
+          id="genkort"
+          onclick="sendData()"
+        />
+      </div>
+    </div>
+    <script src="pu3.js"></script>
+  </body>
+</html>
